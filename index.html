@@ -1,48 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groceries Delivery</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+    <title>Groceries Delivery</title> <!-- Título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo -->
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="/">Bandage</a>
+    <header class="header"> <!-- Cabeçalho da página -->
+        <div class="logo"> <!-- Div para o logotipo -->
+            <a href="/">Bandage</a> <!-- Link para a página inicial -->
         </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Pages</a></li>
+        <nav class="nav"> <!-- Navegação principal -->
+            <ul> <!-- Lista não ordenada para os itens do menu -->
+                <li><a href="#">Home</a></li> <!-- Item de menu para a página inicial -->
+                <li><a href="#">Shop</a></li> <!-- Item de menu para a loja -->
+                <li><a href="#">About</a></li> <!-- Item de menu para informações sobre -->
+                <li><a href="#">Blog</a></li> <!-- Item de menu para o blog -->
+                <li><a href="#">Contact</a></li> <!-- Item de menu para contato -->
+                <li><a href="#">Pages</a></li> <!-- Item de menu para outras páginas -->
             </ul>
         </nav>
-        <div class="user-actions">
-            <a href="#" class="login">👤Login</a>
-            <span>/</span>
-            <a href="#" class="register">Register</a>
-            <button class="search-btn">🔍</button>
-            <button class="cart-btn">🛒</button>
-            <button class="wishlist-btn">❤️</button>
+        <div class="user-actions"> <!-- Div para ações do usuário (login, registro, etc.) -->
+            <a href="#" class="login">👤Login</a> <!-- Link para login -->
+            <span>/</span> <!-- Separador -->
+            <a href="#" class="register">Register</a> <!-- Link para registro -->
+            <button class="search-btn">🔍</button> <!-- Botão de pesquisa -->
+            <button class="cart-btn">🛒</button> <!-- Botão de carrinho -->
+            <button class="wishlist-btn">❤️</button> <!-- Botão de lista de desejos -->
         </div>
     </header>
 
-    <section class="hero">
-        <button class="slider-btn prev">❮</button>
-        <div class="hero-content">
-            <h1>GROCERIES DELIVERY</h1>
-            <p>We know how large objects will act, but things on a small scale just do not act that way.</p>
-            <button class="start-btn">Start Now</button>
+    <section class="hero"> <!-- Seção hero da página -->
+        <button class="slider-btn prev">❮</button> <!-- Botão para a slide anterior -->
+        <div class="hero-content"> <!-- Conteúdo da seção hero -->
+            <h1>GROCERIES DELIVERY</h1> <!-- Título principal -->
+            <p>We know how large objects will act, but things on a small scale just do not act that way.</p> <!-- Descrição -->
+            <button class="start-btn">Start Now</button> <!-- Botão de início -->
         </div>
         
-        <button class="slider-btn next">❯</button>
-        <div class="slider-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
+        <button class="slider-btn next">❯</button> <!-- Botão para a próxima slide -->
+        <div class="slider-dots"> <!-- Indicadores de slide -->
+            <span class="dot active"></span> <!-- Indicador ativo -->
+            <span class="dot"></span> <!-- Indicador inativo -->
+        </div>
+    </section>
+
+    <section class="products-section"> <!-- Seção dos produtos -->
+        <!-- Container 1: Três produtos no topo -->
+        <div class="top-products-container"> <!-- Contêiner para os produtos destacados -->
+            <div class="product-card"> <!-- Cartão de produto -->
+                <img src="images/morango.jpeg" alt="Ice Cream"> <!-- Imagem do produto -->
+                <h3>Your Space</h3> <!-- Nome do produto -->
+                <p>Unique Life</p> <!-- Descrição do produto -->
+                <a href="#" class="explore-btn">Explore Items</a> <!-- Botão para explorar itens -->
+            </div>
+    
+            <div class="product-card"> <!-- Cartão de produto -->
+                <img src="images/morango.jpeg" alt="Apples"> <!-- Imagem do produto -->
+                <h3>Ends Today</h3> <!-- Nome do produto -->
+                <p>Elements Style</p> <!-- Descrição do produto -->
+                <a href="#" class="explore-btn">Explore Items</a> <!-- Botão para explorar itens -->
+            </div>
+    
+            <div class="product-card"> <!-- Cartão de produto -->
+                <img src="images/morango.jpeg" alt="Onion"> <!-- Imagem do produto -->
+                <h3>Ends Today</h3> <!-- Nome do produto -->
+                <p>Elements Style</p> <!-- Descrição do produto -->
+                <a href="#" class="explore-btn">Explore Items</a> <!-- Botão para explorar itens -->
+            </div>
         </div>
     </section>
     

@@ -1,185 +1,239 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e preenchimento na largura e altura total */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte padrão da página */
 }
 
 /* Header Styles */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex; /* Usa flexbox para o layout do cabeçalho */
+    justify-content: space-between; /* Distribui espaço entre os itens do cabeçalho */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    padding: 1rem 2rem; /* Adiciona espaço interno ao cabeçalho */
+    background: white; /* Define a cor de fundo do cabeçalho */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adiciona sombra ao cabeçalho */
 }
 
 .logo a {
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #252B42;
+    font-weight: bold; /* Define o texto como negrito */
+    font-size: 1.5rem; /* Tamanho da fonte do logotipo */
+    text-decoration: none; /* Remove sublinhado do link */
+    color: #252B42; /* Cor do texto do logotipo */
 }
 
 .nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
+    display: flex; /* Usa flexbox para o layout do menu */
+    list-style: none; /* Remove os marcadores da lista */
+    gap: 1.5rem; /* Espaço entre os itens do menu */
 }
 
 .nav a {
-    text-decoration: none;
-    color: #737373;
-    font-weight: 500;
+    text-decoration: none; /* Remove sublinhado do link */
+    color: #737373; /* Cor do texto dos links do menu */
+    font-weight: 500; /* Define a espessura da fonte dos links do menu */
 }
 
 .user-actions {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    display: flex; /* Usa flexbox para o layout das ações do usuário */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 1rem; /* Espaço entre os itens das ações do usuário */
 }
 
 .user-actions a {
-    text-decoration: none;
-    color: #23A6F0;
+    text-decoration: none; /* Remove sublinhado dos links de ações */
+    color: #23A6F0; /* Cor azul para os links de ações */
 }
 
 .user-actions span {
-    color: #23A6F0; /* Cor azul para a barrinha */
-    font-weight: bold; /* Se desejar que a barrinha seja mais grossa */
+    color: #23A6F0; /* Cor azul para a barrinha de separação */
+    font-weight: bold; /* Define a barrinha como mais grossa */
 }
 
 .user-actions button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 1.2rem; /* Tamanho da fonte dos botões */
 }
 
 /* Hero Section Styles */
 .hero {
-    position: relative;
-    height: 80vh;
-    background: url('images/batata.jpeg') center/cover; /* Substitua pelo caminho correto da sua imagem */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative; /* Permite posicionamento absoluto dos filhos */
+    height: 80vh; /* Altura da seção hero (80% da altura da viewport) */
+    background: url('images/batata.jpeg') center/cover; /* Imagem de fundo da seção */
+    display: flex; /* Usa flexbox para o layout da seção hero */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: center; /* Alinha itens horizontalmente ao centro */
 }
 
-
 .hero-content {
-    text-align: center;
-    color: white;
-    padding: 2rem;
-    max-width: 800px;
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    padding: 2rem; /* Espaço interno ao conteúdo da seção hero */
+    max-width: 800px; /* Largura máxima do conteúdo */
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 1.5rem;
-    letter-spacing: 0.2px;
+    font-size: 3.5rem; /* Tamanho do título principal */
+    font-weight: 800; /* Define o título como negrito */
+    margin-bottom: 1.5rem; /* Espaço abaixo do título */
+    letter-spacing: 0.2px; /* Espaçamento entre letras do título */
 }
 
 .hero p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    line-height: 1.5;
+    font-size: 1.25rem; /* Tamanho do parágrafo */
+    margin-bottom: 2rem; /* Espaço abaixo do parágrafo */
+    line-height: 1.5; /* Altura da linha do parágrafo */
 }
 
 .start-btn {
-    background: #23A6F0;
-    color: white;
-    border: none;
-    padding: 1rem 2.5rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    background: #23A6F0; /* Cor de fundo do botão de início */
+    color: white; /* Cor do texto do botão de início */
+    border: none; /* Remove a borda do botão */
+    padding: 1rem 2.5rem; /* Espaço interno do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    font-size: 1rem; /* Tamanho da fonte do botão */
+    font-weight: 600; /* Define a espessura da fonte do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background 0.3s ease; /* Transição suave para a cor de fundo */
 }
 
 .start-btn:hover {
-    background: #1b86c3;
+    background: #1b86c3; /* Cor de fundo do botão ao passar o mouse */
 }
 
 .slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    padding: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    position: absolute; /* Permite posicionar o botão em relação ao pai */
+    top: 50%; /* Posiciona o botão no meio verticalmente */
+    transform: translateY(-50%); /* Centraliza verticalmente usando transformações */
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    color: white; /* Cor do texto do botão */
+    font-size: 2rem; /* Tamanho da fonte dos botões de navegação */
+    padding: 1rem; /* Espaço interno do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background 0.3s ease; /* Transição suave para a cor de fundo */
 }
 
 .prev {
-    left: 20px;
+    left: 20px; /* Posiciona o botão anterior à esquerda */
 }
 
 .next {
-    right: 20px;
+    right: 20px; /* Posiciona o botão seguinte à direita */
 }
 
 .slider-btn:hover {
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.5); /* Cor de fundo ao passar o mouse */
 }
 
 .slider-dots {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 0.5rem;
+    position: absolute; /* Permite posicionar os pontos em relação ao pai */
+    bottom: 30px; /* Posiciona os pontos acima da parte inferior */
+    left: 50%; /* Centraliza horizontalmente os pontos */
+    transform: translateX(-50%); /* Ajusta a posição para o centro exato */
+    display: flex; /* Usa flexbox para o layout dos pontos */
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
-    background: rgba(255,255,255,0.5);
-    border-radius: 50%;
-    cursor: pointer;
+    /* classe pra modificar o css do botão, preciso dar um jeito de deixar ele como uma reta*/
+    width: 8px; /* Largura do ponto */
+    height: 8px; /* Altura do ponto */
+    padding: 5px 40px; /* Preenchimento dos pontos (ajuste para traço) */
+    background: rgba(241, 220, 220, 0.5); /* Cor de fundo dos pontos */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
 .dot.active {
-    background: white;
+    background: white; /* Cor do ponto ativo */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav {
-        display: none;
+        display: none; /* Esconde a navegação em telas pequenas */
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Tamanho do título em telas pequenas */
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 1rem; /* Tamanho do parágrafo em telas pequenas */
     }
 
     .user-actions {
-        gap: 0.5rem;
+        gap: 0.5rem; /* Espaço menor entre ações do usuário */
     }
 }
 
 @media (max-width: 480px) {
     .header {
-        padding: 1rem;
+        padding: 1rem; /* Reduz o preenchimento do cabeçalho em telas menores */
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Tamanho do título em telas menores */
     }
 
     .slider-btn {
-        font-size: 1.5rem;
-        padding: 0.5rem;
+        font-size: 1.5rem; /* Tamanho da fonte dos botões de navegação em telas menores */
+        padding: 0.5rem; /* Reduz o preenchimento dos botões de navegação em telas menores */
     }
+}
+
+.products-section {
+    padding: 2rem; /* Espaço interno da seção de produtos */
+    display: flex; /* Usa flexbox para o layout dos produtos */
+    flex-direction: column; /* Alinha os produtos em coluna */
+    gap: 2rem; /* Espaço entre as seções de produtos */
+}
+
+/* Container 1: Topo com três produtos */
+.top-products-container {
+    display: flex; /* Usa flexbox para o layout dos produtos destacados */
+    justify-content: space-around; /* Distribui espaço uniformemente entre os produtos */
+    gap: 1rem; /* Espaço entre os cartões de produtos */
+}
+
+.product-card {
+    background-color: white; /* Cor de fundo do cartão do produto */
+    padding: 1rem; /* Espaço interno do cartão do produto */
+    text-align: center; /* Centraliza o texto no cartão */
+    border: 1px solid #eee; /* Borda do cartão */
+    width: 20%; /* Largura do cartão do produto */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra do cartão do produto */
+}
+
+.product-card img {
+    max-width: 100%; /* Imagem não excede a largura do cartão */
+    height: auto; /* Mantém a proporção da imagem */
+    background: url('images/batata.jpeg') center/cover; /* Imagem de fundo da seção */
+}
+
+.product-card h3 {
+    font-size: 1.2rem; /* Tamanho da fonte do título do produto */
+    margin-top: 1rem; /* Espaço acima do título do produto */
+    color: #252B42; /* Cor do texto do título do produto */
+}
+
+.product-card p {
+    font-size: 1rem; /* Tamanho da fonte da descrição do produto */
+    color: #737373; /* Cor do texto da descrição do produto */
+    margin-bottom: 1.5rem; /* Espaço abaixo da descrição do produto */
+}
+
+.explore-btn {
+    background-color: none; /* Remove a cor de fundo do botão de exploração */
+    color: black; /* Cor do texto do botão de exploração */
+    padding: 0.5rem 1.5rem; /* Espaço interno do botão de exploração */
+    border-radius: 4px; /* Bordas arredondadas do botão de exploração */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-weight: 600; /* Define a espessura da fonte do botão de exploração */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo do botão */
+}
+
+.explore-btn:hover {
+    background-color: #737373; 
 }
