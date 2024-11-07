@@ -1,76 +1,267 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
-    <title>Groceries Delivery</title> <!-- Título da página exibido na aba do navegador -->
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo -->
-</head>
-<body>
-    <header class="header"> <!-- Cabeçalho da página -->
-        <div class="logo"> <!-- Div para o logotipo -->
-            <a href="/">Bandage</a> <!-- Link para a página inicial -->
-        </div>
-        <nav class="nav"> <!-- Navegação principal -->
-            <ul> <!-- Lista não ordenada para os itens do menu -->
-                <li><a href="#">Home</a></li> <!-- Item de menu para a página inicial -->
-                <li><a href="#">Shop</a></li> <!-- Item de menu para a loja -->
-                <li><a href="#">About</a></li> <!-- Item de menu para informações sobre -->
-                <li><a href="#">Blog</a></li> <!-- Item de menu para o blog -->
-                <li><a href="#">Contact</a></li> <!-- Item de menu para contato -->
-                <li><a href="#">Pages</a></li> <!-- Item de menu para outras páginas -->
-            </ul>
-        </nav>
-        <div class="user-actions"> <!-- Div para ações do usuário (login, registro, etc.) -->
-            <a href="#" class="login">👤Login</a> <!-- Link para login -->
-            <span>/</span> <!-- Separador -->
-            <a href="#" class="register">Register</a> <!-- Link para registro -->
-            <button class="search-btn">🔍</button> <!-- Botão de pesquisa -->
-            <button class="cart-btn">🛒</button> <!-- Botão de carrinho -->
-            <button class="wishlist-btn">❤️</button> <!-- Botão de lista de desejos -->
-        </div>
-    </header>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bandage - Groceries Delivery</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <h2 class="logo">Bandage</h2>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Shop <span class="dropdown-arrow">▾</span></a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#">Pages</a>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><span class="icon">👤</span> Login / Register</a>
+                <a href="#"><span class="icon">🔍</span></a>
+                <a href="#"><span class="icon">🛒</span><span class="cart-count">1</span></a>
+                <a href="#"><span class="icon">❤️</span><span class="wishlist-count">1</span></a>
+            </div>
+        </header>
 
-    <section class="hero"> <!-- Seção hero da página -->
-        <button class="slider-btn prev">❮</button> <!-- Botão para a slide anterior -->
-        <div class="hero-content"> <!-- Conteúdo da seção hero -->
-            <h1>GROCERIES DELIVERY</h1> <!-- Título principal -->
-            <p>We know how large objects will act, but things on a small scale just do not act that way.</p> <!-- Descrição -->
-            <button class="start-btn">Start Now</button> <!-- Botão de início -->
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>GROCERIES DELIVERY</h1>
+                <p>We know how large objects will act, but things on a small scale just do not act that way.</p>
+                <button onclick="startNow()">Start Now</button>
+            </div>
+            <div class="slider-arrow left-arrow">‹</div>
+            <div class="slider-arrow right-arrow">›</div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </section>
+
+<!-- Nova Seção de Produtos -->
+<section class="product-section">
+    <div class="product-card">
+        <div class="product-info">
+            <p class="subtitle">Your Space</p>
+            <h3 class="title">Unique Life</h3>
+            <a href="#" class="explore-link">Explore Items</a>
         </div>
+        <img src="./images/sorvete.png" alt="Caramel Icecream">
+    </div>
+    <div class="product-card">
+        <div class="product-info">
+            <p class="subtitle">Ends Today</p>
+            <h3 class="title">Elements Style</h3>
+            <a href="#" class="explore-link">Explore Items</a>
+        </div>
+        <img src="./images/maça.png" alt="Green Apples">
+    </div>
+    <div class="product-card">
+        <div class="product-info">
+            <p class="subtitle">Ends Today</p>
+            <h3 class="title">Elements Style</h3>
+            <a href="#" class="explore-link">Explore Items</a>
+        </div>
+        <img src="./images/peru.png" alt="Ham">
+    </div>
+</section>
+
+
+
         
-        <button class="slider-btn next">❯</button> <!-- Botão para a próxima slide -->
-        <div class="slider-dots"> <!-- Indicadores de slide -->
-            <span class="dot active"></span> <!-- Indicador ativo -->
-            <span class="dot"></span> <!-- Indicador inativo -->
+
+
+        <!-- Product Layout Section -->
+        <div class="product-layout">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h4>FURNITURE</h4>
+                <p>5 Items</p>
+                <img src="./images/image.png" alt="Furniture Image">
+            </aside>
+
+            
+
+            <!-- Product List -->
+            <section class="product-list">
+                <div class="product-categories-wrapper">
+                    <h2>Bestseller Products</h2>
+                    <div class="product-categories">
+                        <a href="#" class="active">Men</a>
+                        <a href="#">Women</a>
+                        <a href="#">Accessories</a>
+                    </div>
+                    <div class="category-arrows">
+                        <div class="left-arrow">‹</div>
+                        <div class="right-arrow">›</div>
+                    </div>
+                </div>
+                <div class="products">
+                    <!-- Sample Product -->
+                    <div class="product-item">
+                        <img src="./images/sorvete.png" alt="Product Image">
+                        <h3>Graphic Design</h3>
+                        <p>English Department</p>
+                        <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                    </div>
+                    <div class="product-item">
+                        <img src="./images/maça.png" alt="Product Image">
+                        <h3>Graphic Design</h3>
+                        <p>English Department</p>
+                        <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                    </div>
+                    <div class="product-item">
+                        <img src="./images/peru.png" alt="Product Image">
+                        <h3>Graphic Design</h3>
+                        <p>English Department</p>
+                        <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                    </div>
+                    <div class="product-item">
+                        <img src="./images/sorvete.png" alt="Product Image">
+                        <h3>Graphic Design</h3>
+                        <p>English Department</p>
+                        <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                    </div>
+                    <div class="product-item">
+                        <img src="./images/maça.png" alt="Product Image">
+                        <h3>Graphic Design</h3>
+                        <p>English Department</p>
+                        <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                    </div>
+                    <div class="product-item">
+                        <img src="./images/peru.png" alt="Product Image">
+                        <h3>Graphic Design</h3>
+                        <p>English Department</p>
+                        <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                    </div>
+                </div>
+            </section>
         </div>
+
+        <!-- Most Popular Section -->
+        <section class="most-popular">
+            <div class="popular-left">
+                <img src="./images/homem.png" alt="Scooter Image">
+            </div>
+            <div class="popular-right">
+                <h2>Most Popular</h2>
+                <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                <div class="popular-product">
+                    <img src="./images/carne.png" alt="Product Image">
+                    <p>English Department</p>
+                    <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-list">
+            <div class="feature">
+                <h3>1. Easy to use</h3>
+                <p>Things on a very small that you have any direct.</p>
+            </div>
+            <div class="feature">
+                <h3>2. Easy to use</h3>
+                <p>Things on a very small that you have any direct.</p>
+            </div>
+            <div class="feature">
+                <h3>3. Easy to use</h3>
+                <p>Things on a very small that you have any direct.</p>
+            </div>
+            <div class="feature">
+                <h3>4. Easy to use</h3>
+                <p>Things on a very small that you have any direct.</p>
+            </div>
+        </section>
+
+        <!-- Additional Product Grid with Sidebar -->
+    <section class="additional-product-grid">
+        <!-- Product List on the left -->
+        <div class="product-listing">
+            <div class="product-categories-wrapper">
+                <h2>Bestseller Products</h2>
+                <div class="product-categories">
+                    <a href="#" class="active">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Accessories</a>
+                </div>
+                <div class="category-arrows">
+                    <div class="left-arrow">‹</div>
+                    <div class="right-arrow">›</div>
+                </div>
+            </div>
+            <div class="product-items-grid">
+                <div class="product-item">
+                    <img src="./images/sorvete.png" alt="Ice Cream">
+                    <h3>Graphic Design</h3>
+                    <p>English Department</p>
+                    <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                </div>
+                <div class="product-item">
+                    <img src="./images/maça.png" alt="Apples">
+                    <h3>Graphic Design</h3>
+                    <p>English Department</p>
+                    <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                </div>
+                <div class="product-item">
+                    <img src="./images/peru.png" alt="Ham">
+                    <h3>Graphic Design</h3>
+                    <p>English Department</p>
+                    <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                </div>
+                <div class="product-item">
+                    <img src="./images/sorvete.png" alt="Ice Cream">
+                    <h3>Graphic Design</h3>
+                    <p>English Department</p>
+                    <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                </div>
+                <div class="product-item">
+                    <img src="./images/maça.png" alt="Apples">
+                    <h3>Graphic Design</h3>
+                    <p>English Department</p>
+                    <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                </div>
+                <div class="product-item">
+                    <img src="./images/peru.png" alt="Ham">
+                    <h3>Graphic Design</h3>
+                    <p>English Department</p>
+                    <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar with donut image on the right -->
+        <aside class="product-sidebar">
+            <h4>FURNITURE</h4>
+            <p>5 Items</p>
+            <img src="./images/donut.png" alt="Donut Image">
+        </aside>
     </section>
 
-    <section class="products-section"> <!-- Seção dos produtos -->
-        <!-- Container 1: Três produtos no topo -->
-        <div class="top-products-container"> <!-- Contêiner para os produtos destacados -->
-            <div class="product-card"> <!-- Cartão de produto -->
-                <img src="images/morango.jpeg" alt="Ice Cream"> <!-- Imagem do produto -->
-                <h3>Your Space</h3> <!-- Nome do produto -->
-                <p>Unique Life</p> <!-- Descrição do produto -->
-                <a href="#" class="explore-btn">Explore Items</a> <!-- Botão para explorar itens -->
+    <!-- New Most Popular Section -->
+    <section class="new-most-popular">
+        <!-- Left Product Details -->
+        <div class="product-details">
+            <h2>Most Popular</h2>
+            <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+            <div class="product-image">
+                <img src="./images/caramelo.png" alt="Cashew Product">
             </div>
-    
-            <div class="product-card"> <!-- Cartão de produto -->
-                <img src="images/morango.jpeg" alt="Apples"> <!-- Imagem do produto -->
-                <h3>Ends Today</h3> <!-- Nome do produto -->
-                <p>Elements Style</p> <!-- Descrição do produto -->
-                <a href="#" class="explore-btn">Explore Items</a> <!-- Botão para explorar itens -->
-            </div>
-    
-            <div class="product-card"> <!-- Cartão de produto -->
-                <img src="images/morango.jpeg" alt="Onion"> <!-- Imagem do produto -->
-                <h3>Ends Today</h3> <!-- Nome do produto -->
-                <p>Elements Style</p> <!-- Descrição do produto -->
-                <a href="#" class="explore-btn">Explore Items</a> <!-- Botão para explorar itens -->
+            <p class="product-description">English Department</p>
+            <p class="product-sales">15 Sales</p>
+            <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+            <div class="color-dots">
+                <span class="dot dot1"></span>
+                <span class="dot dot2"></span>
+                <span class="dot dot3"></span>
+                <span class="dot dot4"></span>
             </div>
         </div>
+
+        <!-- Right Large Image -->
+        <div class="large-image">
+            <img src="./images/mulher.png" alt="Woman with Burger">
+        </div>
     </section>
-    
-</body>
-</html>
