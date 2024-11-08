@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -19,10 +19,18 @@
                 <a href="#">Pages</a>
             </nav>
             <div class="header-icons">
-                <a href="#"><span class="icon">👤</span> Login / Register</a>
-                <a href="#"><span class="icon">🔍</span></a>
-                <a href="#"><span class="icon">🛒</span><span class="cart-count">1</span></a>
-                <a href="#"><span class="icon">❤️</span><span class="wishlist-count">1</span></a>
+             <!-- Login/Register -->
+             <a href="#" class="login-register">
+            <img src="images/man.png" alt="User Icon">Login / Register</a>
+
+             <!-- Search -->
+             <a href="#"><img src="images/lupa.png" alt="Search Icon" class="icon"></a>
+
+            <!-- Cart com contador -->
+            <a href="#"><img src="images/cart.png" alt="Cart Icon" class="icon"><span class="cart-count">1</span></a>
+
+            <!-- Wishlist com contador -->
+            <a href="#"><img src="images/heart.png" alt="Heart Icon" class="icon"><span class="cart-count">1</span></a>
             </div>
         </header>
 
@@ -33,8 +41,8 @@
                 <p>We know how large objects will act, but things on a small scale just do not act that way.</p>
                 <button onclick="startNow()">Start Now</button>
             </div>
-            <div class="slider-arrow left-arrow">‹</div>
-            <div class="slider-arrow right-arrow">›</div>
+            <div class="slider-arrow left-arrow"><img src="images/Seta-Esquerda.png"></div>
+            <div class="slider-arrow right-arrow"><img src="images/Seta-Direita.png"></div>
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
@@ -48,7 +56,7 @@
             <h3 class="title">Unique Life</h3>
             <a href="#" class="explore-link">Explore Items</a>
         </div>
-        <img src="./images/sorvete.png" alt="Caramel Icecream">
+        <img src="./images/caramel-big.png" alt="Caramel Icecream">
     </div>
     <div class="product-card">
         <div class="product-info">
@@ -56,7 +64,7 @@
             <h3 class="title">Elements Style</h3>
             <a href="#" class="explore-link">Explore Items</a>
         </div>
-        <img src="./images/maça.png" alt="Green Apples">
+        <img src="./images/green-apple-big.png" alt="Green Apples">
     </div>
     <div class="product-card">
         <div class="product-info">
@@ -64,14 +72,12 @@
             <h3 class="title">Elements Style</h3>
             <a href="#" class="explore-link">Explore Items</a>
         </div>
-        <img src="./images/peru.png" alt="Ham">
+        <img src="./images/turkey-big.png" alt="Ham">
     </div>
 </section>
 
 
-
         
-
 
         <!-- Product Layout Section -->
         <div class="product-layout">
@@ -87,7 +93,7 @@
             <!-- Product List -->
             <section class="product-list">
                 <div class="product-categories-wrapper">
-                    <h2>Bestseller Products</h2>
+                    <h2>BESTSELLER PRODUCTS</h2>
                     <div class="product-categories">
                         <a href="#" class="active">Men</a>
                         <a href="#">Women</a>
@@ -101,37 +107,37 @@
                 <div class="products">
                     <!-- Sample Product -->
                     <div class="product-item">
-                        <img src="./images/sorvete.png" alt="Product Image">
+                        <img src="./images/caramel-icecream.png" alt="Product Image">
                         <h3>Graphic Design</h3>
                         <p>English Department</p>
                         <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
                     </div>
                     <div class="product-item">
-                        <img src="./images/maça.png" alt="Product Image">
+                        <img src="./images/green-apple.png" alt="Product Image">
                         <h3>Graphic Design</h3>
                         <p>English Department</p>
                         <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
                     </div>
                     <div class="product-item">
-                        <img src="./images/peru.png" alt="Product Image">
+                        <img src="./images/turkey.png" alt="Product Image">
                         <h3>Graphic Design</h3>
                         <p>English Department</p>
                         <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
                     </div>
                     <div class="product-item">
-                        <img src="./images/sorvete.png" alt="Product Image">
+                        <img src="./images/caramel-icecream.png" alt="Product Image">
                         <h3>Graphic Design</h3>
                         <p>English Department</p>
                         <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
                     </div>
                     <div class="product-item">
-                        <img src="./images/maça.png" alt="Product Image">
+                        <img src="./images/green-apple.png" alt="Product Image">
                         <h3>Graphic Design</h3>
                         <p>English Department</p>
                         <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
                     </div>
                     <div class="product-item">
-                        <img src="./images/peru.png" alt="Product Image">
+                        <img src="./images/turkey.png" alt="Product Image">
                         <h3>Graphic Design</h3>
                         <p>English Department</p>
                         <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
@@ -181,7 +187,7 @@
         <!-- Product List on the left -->
         <div class="product-listing">
             <div class="product-categories-wrapper">
-                <h2>Bestseller Products</h2>
+                <h2>BESTSELLER PRODUTCTS</h2>
                 <div class="product-categories">
                     <a href="#" class="active">Men</a>
                     <a href="#">Women</a>
@@ -194,37 +200,37 @@
             </div>
             <div class="product-items-grid">
                 <div class="product-item">
-                    <img src="./images/sorvete.png" alt="Ice Cream">
+                    <img src="./images/caramel-icecream.png" alt="Ice Cream">
                     <h3>Graphic Design</h3>
                     <p>English Department</p>
                     <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
                 </div>
                 <div class="product-item">
-                    <img src="./images/maça.png" alt="Apples">
+                    <img src="./images/green-apple.png" alt="Apples">
                     <h3>Graphic Design</h3>
                     <p>English Department</p>
                     <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
                 </div>
                 <div class="product-item">
-                    <img src="./images/peru.png" alt="Ham">
+                    <img src="./images/turkey.png" alt="Ham">
                     <h3>Graphic Design</h3>
                     <p>English Department</p>
                     <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
                 </div>
                 <div class="product-item">
-                    <img src="./images/sorvete.png" alt="Ice Cream">
+                    <img src="./images/caramel-icecream.png" alt="Ice Cream">
                     <h3>Graphic Design</h3>
                     <p>English Department</p>
                     <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
                 </div>
                 <div class="product-item">
-                    <img src="./images/maça.png" alt="Apples">
+                    <img src="./images/green-apple.png" alt="Apples">
                     <h3>Graphic Design</h3>
                     <p>English Department</p>
                     <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
                 </div>
                 <div class="product-item">
-                    <img src="./images/peru.png" alt="Ham">
+                    <img src="./images/turkey.png" alt="Ham">
                     <h3>Graphic Design</h3>
                     <p>English Department</p>
                     <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
@@ -247,7 +253,7 @@
             <h2>Most Popular</h2>
             <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
             <div class="product-image">
-                <img src="./images/caramelo.png" alt="Cashew Product">
+                <img src="./images/peanuts.png" alt="Cashew Product">
             </div>
             <p class="product-description">English Department</p>
             <p class="product-sales">15 Sales</p>
@@ -266,4 +272,189 @@
         </div>
     </section>
 
-    
+    <!-- Bestseller Products Section -->
+    <section class="bestseller-products">
+        <h2>Bestseller Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="./images/azul.png" alt="Product 1">
+                <h3>Graphic Design</h3>
+                <p>English Department</p>
+                <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+            </div>
+            <div class="product-item">
+                <img src="./images/queijo.png" alt="Product 2">
+                <h3>Graphic Design</h3>
+                <p>English Department</p>
+                <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+            </div>
+            <div class="product-item">
+                <img src="./images/garrafa.png" alt="Product 3">
+                <h3>Graphic Design</h3>
+                <p>English Department</p>
+                <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+            </div>
+            <div class="product-item">
+                <img src="./images/candies.png" alt="Product 4">
+                <h3>Graphic Design</h3>
+                <p>English Department</p>
+                <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos Section -->
+    <section class="brand-logos">
+        <img src="./images/hooli.png" alt="Hooli Logo">
+        <img src="./images/lyA.png" alt="Lyft Logo">
+        <img src="./images/chapeu.png" alt="Leaf Logo">
+        <img src="./images/stripe.png" alt="Stripe Logo">
+        <img src="./images/aws.png" alt="AWS Logo">
+        <img src="./images/reddit.png" alt="Reddit Logo">
+    </section>
+
+    <!-- Featured Posts Section -->
+    <section class="featured-posts">
+        <p class="section-subtitle">Practice Advice</p>
+        <h2>Featured Posts</h2>
+        <div class="post-cards">
+            <!-- Post Card 1 -->
+            <div class="post-card">
+                <div class="post-image">
+                    <img src="./images/rua.png" alt="Colorful Houses">
+                    <span class="badge">New</span>
+                </div>
+                <div class="post-content">
+                    <div class="post-tags">
+                        <a href="#">Google</a>
+                        <a href="#">Trending</a>
+                        <a href="#">New</a>
+                    </div>
+                    <h3>Loudest à la Madison #1 (L'intégral)</h3>
+                    <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                    <div class="post-info">
+                        <span class="date">📅 22 April 2021</span>
+                        <span class="comments">💬 10 comments</span>
+                    </div>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- Post Card 2 -->
+            <div class="post-card">
+                <div class="post-image">
+                    <img src="./images/carro.png" alt="Pink Car">
+                    <span class="badge">New</span>
+                </div>
+                <div class="post-content">
+                    <div class="post-tags">
+                        <a href="#">Google</a>
+                        <a href="#">Trending</a>
+                        <a href="#">New</a>
+                    </div>
+                    <h3>Loudest à la Madison #1 (L'intégral)</h3>
+                    <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                    <div class="post-info">
+                        <span class="date">📅 22 April 2021</span>
+                        <span class="comments">💬 10 comments</span>
+                    </div>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- Post Card 3 -->
+            <div class="post-card">
+                <div class="post-image">
+                    <img src="./images/sombinhas.png" alt="Colorful Umbrellas">
+                    <span class="badge">New</span>
+                </div>
+                <div class="post-content">
+                    <div class="post-tags">
+                        <a href="#">Google</a>
+                        <a href="#">Trending</a>
+                        <a href="#">New</a>
+                    </div>
+                    <h3>Loudest à la Madison #1 (L'intégral)</h3>
+                    <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                    <div class="post-info">
+                        <span class="date">📅 22 April 2021</span>
+                        <span class="comments">💬 10 comments</span>
+                    </div>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-heading">
+                <h3>Consulting Agency For Your Business</h3>
+                <p>the quick fox jumps over the lazy dog</p>
+            </div>
+            <a href="#" class="contact-button">Contact Us</a>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Company Info</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">We are hiring</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">We are hiring</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Features</h4>
+                <ul>
+                    <li><a href="#">Business Marketing</a></li>
+                    <li><a href="#">User Analytic</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                    <li><a href="#">Unlimited Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">IOS & Android</a></li>
+                    <li><a href="#">Watch a Demo</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+            <div class="footer-column contact-info">
+                <h4>Get In Touch</h4>
+                <p>📞 (480) 555-0103</p>
+                <p>📍 4517 Washington Ave.</p>
+                <p>✉️ debra.holt@example.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Made With Love By Finland All Right Reserved</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon facebook">
+                    <img src="./images/facebook.png" alt="Facebook" width="24" height="24">
+                </a>
+                <a href="#" class="social-icon instagram">
+                    <img src="./images/insta.png" alt="Instagram" width="24" height="24">
+                </a>
+                <a href="#" class="social-icon twitter">
+                    <img src="./images/twitter.png" alt="Twitter" width="24" height="24">
+                </a>
+            </div>
+            
+        <script src="scripts.js"></script>
+    </body>
+    </html>
