@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bandage - Groceries Delivery</title>
+        <title>Groceries Delivery</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" defer></script>
     </head>
     <body>
         <!-- Header -->
@@ -18,6 +19,7 @@
                 <a href="#">Contact</a>
                 <a href="#">Pages</a>
             </nav>
+            
             <div class="header-icons">
              <!-- Login/Register -->
              <a href="#" class="login-register">
@@ -32,17 +34,55 @@
             <!-- Wishlist com contador -->
             <a href="#"><img src="images/heart.png" alt="Heart Icon" class="icon"><span class="cart-count">1</span></a>
             </div>
+
+
+            <div class="header-icons2">
+                <!-- Search -->
+                <a href="#"><img src="images/lupa2.png" alt="Search Icon" class="icon2"></a>
+   
+               <!-- Cart com contador -->
+               <a href="#"><img src="images/carrinho2.png" alt="Cart Icon" class="icon2"></a>
+            </div>
+
+
+            <nav class="nav-links2">
+                <div class="hamburger" onclick="toggleMobileMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            
+                <nav class="mobile-menu" id="mobileMenu">
+                    <a href="#">Home</a>
+                    <a href="#">Product</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </nav>
+
         </header>
 
         <!-- Hero Section -->
         <section class="hero">
+
+
+            <!-- Slider com imagens -->
+            <div class="slider">
+            <img src="images/hero-bg.png" alt="Slide 1" class="active">
+            <img src="images/hamburger.png" alt="Slide 2">
+            <img src="images/sushi.png" alt="Slide 3">
+            </div>
+
             <div class="hero-content">
                 <h1>GROCERIES DELIVERY</h1>
-                <p>We know how large objects will act, but things on a small scale just do not act that way.</p>
-                <button onclick="startNow()">Start Now</button>
+                <p>We know how large objects will act, but things on a small scale <span class="hide-on-mobile">just not that way</span>.</p>
+                <button id="start-now-button" onclick="startNow()">Start Now</button>
             </div>
-            <div class="slider-arrow left-arrow"><img src="images/Seta-Esquerda.png"></div>
-            <div class="slider-arrow right-arrow"><img src="images/Seta-Direita.png"></div>
+  
+            <div class="slider-arrow left-arrow" onclick="prevSlide()">‹</div>
+            <div class="slider-arrow right-arrow" onclick="nextSlide()">›</div>
+            
+           
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
@@ -76,7 +116,7 @@
     </div>
 </section>
 
-        <!-- Product Layout Section -->
+<!-- Product Layout Section -->
         <div class="product-layout">
             <!-- Sidebar -->
             <aside class="sidebar">
@@ -86,7 +126,6 @@
             </aside>
 
             
-
             <!-- Product List -->
             <section class="product-list">
                 <div class="product-categories-wrapper1">
@@ -101,10 +140,12 @@
                         <div class="right-arrow">›</div>
                     </div>
                 </div>
+
+                
                 <div class="products">
                     <!-- Sample Product -->
                     <div class="product-item">
-                        <img src="./images/caramel-icecream.png" alt="Product Image">
+                        <img src="./images/caramel-icecream.png" alt="Product image">
                         <h3>Graphic Design</h3>
                         <p>English Department</p>
                         <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
@@ -155,7 +196,19 @@
                     <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
                     <img src="./images/carne.png" alt="Product Image">
                     <p>English Department</p>
+                  
+                    <div class="vendas">
+                    <img src="./images/Seta-Baixo.png" alt="Sales Numbers">
+                    <p class="num-vendas"><s>15 Sales</s></p>
+
+                    </div>
                     <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+                    <div class="color-dots2">
+                        <span class="dot2 dot2-1"></span>
+                        <span class="dot2 dot2-2"></span>
+                        <span class="dot2 dot2-3"></span>
+                        <span class="dot2 dot2-4"></span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -195,6 +248,14 @@
 
         <!-- Additional Product Grid with Sidebar -->
     <section class="additional-product-grid">
+
+        <!-- Sidebar with donut image on the right -->
+        <aside class="product-sidebar2">
+            <h4>FURNITURE</h4>
+            <p>5 Items</p>
+            <img src="./images/donut.png" alt="Donut Image">
+        </aside>
+
         <!-- Product List on the left -->
         <div class="product-listing">
             <div class="product-categories-wrapper2">
@@ -277,9 +338,30 @@
             </div>
         </div>
 
+
+
         <!-- Right Large Image -->
         <div class="large-image">
             <img src="./images/mulher.png" alt="Woman with Burger">
+        </div>
+
+
+
+        <div class="product-details2">
+            <h2>Most Popular</h2>
+            <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+            <div class="product-image2-1">
+                <img src="./images/peanuts.png" alt="Cashew Product">
+            </div>
+            <p class="product-description2">English Department</p>
+            <p class="product-sales2">15 Sales</p>
+            <p class="price"><s>$16.48</s> <span class="discounted-price">$6.48</span></p>
+            <div class="color-dots">
+                <span class="dot dot1"></span>
+                <span class="dot dot2"></span>
+                <span class="dot dot3"></span>
+                <span class="dot dot4"></span>
+            </div>
         </div>
     </section>
 
@@ -486,6 +568,5 @@
                 </a>
             </div>
             
-        <script src="scripts.js"></script>
     </body>
     </html>
