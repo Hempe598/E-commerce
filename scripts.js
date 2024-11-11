@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const startButton = document.getElementById('start-now-button');
     if (startButton) {
         startButton.addEventListener('click', () => {
-            alert('Botão Start Now clicado!');
+            alert('Bem vindo so Supermercado!!');
         });
     }
 
