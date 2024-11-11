@@ -1837,6 +1837,8 @@ font-size: 80px;
         width: 100%;
     }
   
+
+    
     /* Ajustes para o rodapé */
     .footer-content {
         flex-direction: column;
@@ -1855,3 +1857,4 @@ font-size: 80px;
         gap: 15px;
     }
   }
+
