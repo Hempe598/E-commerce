@@ -1845,6 +1845,9 @@ font-size: 80px;
         display: flex;
     }
 
+    .post-cards {
+       flex-direction: column;
+    }
 
     .brand-logos {
         height: 800px;
