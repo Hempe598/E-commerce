@@ -17,9 +17,8 @@ header {
     align-items: center;
     padding: 20px 40px;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
-
 
 .logo {
     font-weight: bold;
@@ -73,8 +72,6 @@ font-size: 80px;
     color: #23A6F0;
 }
 
-
-
 .header-icons .cart-count,
 .header-icons .wishlist-count {
     color: #23A6F0;
@@ -82,8 +79,6 @@ font-size: 80px;
     margin-left: 5px;
     font-weight: bold;
 }
-
-
 
 /* Hero Section */
 .hero {
@@ -131,7 +126,6 @@ font-size: 80px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Sutil para legibilidade */
 }
 
-
 /* Estilo do título principal */
 .hero-content h1 {
     font-size: 3rem; /* Tamanho grande para destaque */
@@ -148,7 +142,6 @@ font-size: 80px;
     font-weight: 300; /* Peso da fonte leve */
   }
   
-
   .hero-content button {
     padding: 10px 20px;
     font-size: 1rem;
@@ -163,7 +156,6 @@ font-size: 80px;
     background-color: #1a85c9; /* Cor ligeiramente mais escura no hover */
     transform: scale(1.05); /* Aumenta o botão em 5% */
 }
-
 
 .hero .slider-arrow {
     font-size: 2em;
@@ -192,12 +184,10 @@ font-size: 80px;
     font-size: 100px;
 }
 
-
 .hero .right-arrow {
     right: 20px;
     font-size: 100px;
 }
-
 
 /* Barra de progresso */
 .progress-bar {
@@ -242,7 +232,6 @@ font-size: 80px;
     justify-content: center; /* Centraliza o conteúdo flex dentro do contêiner */
 }
 
-
 .product-card:hover {
     transform: scale(1.05);
 }
@@ -282,9 +271,6 @@ font-size: 80px;
     text-decoration: underline;
 }
 
-
-
-
 /* Product Layout */
 .product-layout {
     display: flex;
@@ -293,8 +279,6 @@ font-size: 80px;
     justify-content: center; /* Centraliza o conteúdo flex dentro do contêiner */
     margin-bottom: 50px;
 }
-
-
 
 .sidebar {
     background-color: #ffc107;
@@ -335,8 +319,6 @@ font-size: 80px;
     object-fit: cover; /* Ajusta a imagem para cobrir toda a sidebar */
     z-index: 1;
 }
-
-
 
 /* Product List */
 .product-list {
@@ -453,11 +435,6 @@ font-size: 80px;
     font-weight: bold;
 }
 
-
-
-
-
-
 /* Most Popular Section */
 .most-popular {
     display: flex;
@@ -541,13 +518,9 @@ font-size: 80px;
     margin-bottom: 50px;
 }
 
-
-
 .vendas{
     display: none;
 }
-
-
 
 .popular-product .price {
     font-size: 1em;
@@ -564,8 +537,6 @@ font-size: 80px;
 .color-dots2 {
    display: none;
 }
-
-
 
 
 /* Features List Section */
@@ -611,13 +582,6 @@ font-size: 80px;
     margin: 5px 0 0;
 }
 
-
-
-
-
-
-
-
 /* Additional Product Grid with Sidebar Section */
 .additional-product-grid {
     display: flex;
@@ -636,8 +600,6 @@ font-size: 80px;
     width: 40%; /* Ajuste a largura conforme necessário */
 }
 
-
-
 .product-listing .product-categories-wrapper2 {
     display: flex;
     align-items: center;
@@ -647,7 +609,6 @@ font-size: 80px;
     margin-bottom: 20px;
     margin-left: 50px;
 }
-
 
 .product-categories-wrapper2 h2 {
     font-size: 1.2em; /* Aumenta o tamanho do título */
@@ -682,8 +643,6 @@ font-size: 80px;
     justify-content: space-between; /* Centraliza as setas */
     margin-right: 0px;
 }
-
-
 
 .category-arrows .left-arrow,
 .category-arrows .right-arrow {
@@ -750,8 +709,6 @@ font-size: 80px;
     font-weight: bold;
 }
 
-
-
 /* Sidebar with Donut Image */
 .additional-product-grid .product-sidebar {
     background-color: #ffc107;
@@ -797,7 +754,6 @@ font-size: 80px;
     z-index: 1;
 }
 
-
 /* New Most Popular Section */
 .new-most-popular {
     display: flex;
@@ -829,7 +785,6 @@ font-size: 80px;
     margin-top: 80px;
 }
 
-
 .product-details p {
     font-size: 1em;
     color: #666;
@@ -849,7 +804,6 @@ font-size: 80px;
     margin-top: 30px;
     margin-bottom: 50px;
 }
-
 
 .product-details .product-description {
     font-size: 0.9em;
@@ -904,8 +858,6 @@ font-size: 80px;
 .large-image img {
     width: 100%;
 }
-
-
 
 /* Bestseller Products Section */
 .bestseller-products {
@@ -993,10 +945,6 @@ font-size: 80px;
     color: #28a745;
     font-weight: bold;
 }
-
-
-
-
 
 
 /* Brand Logos Section */
@@ -1254,6 +1202,7 @@ font-size: 80px;
 }
 
 
+
 /* Estilo do menu hambúrguer conforme o design no Figma definido */
 .hamburger {
     display: none;
@@ -1286,7 +1235,6 @@ font-size: 80px;
     color: #007bff;
 }
 
-  
   /* Estilo do menu móvel */
   .mobile-menu {
     display: none; /* Esconde o menu inicialmente */
@@ -1315,15 +1263,6 @@ font-size: 80px;
   
   /* Tornar o menu hambúrguer visível no mobile */
   
-
-
-
-
-
-
-
-
-
 
 
 /* Responsividade para tablets e celulares */
@@ -1376,10 +1315,6 @@ font-size: 80px;
     }
   }
   
-
-
-
-
   @media (max-width: 768px) {
     /* Ajustes para celulares */
     
@@ -1433,7 +1368,6 @@ font-size: 80px;
         display: flex; /* Mostra o ícone hambúrguer no mobile */
         margin-bottom: 118px;
       }
-    
   
       .mobile-menu.active {
         display: flex; /* Mostra o menu quando ativo */
@@ -1456,12 +1390,22 @@ font-size: 80px;
         height: 550px;
     }
 
-    .hero.content h1 {
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: white;
+        max-width: 700px;
+        margin: 0 auto;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-content h1 {
         font-size: 2.7rem; 
       }
   
-    .hero.content p {
-        font-size: 1em;
+    .hero-content p {
+        font-size: 0.8em;
     }
   
     .hide-on-mobile {
@@ -1472,7 +1416,6 @@ font-size: 80px;
         display: none;
     }
 
-
     .product-card {
         display: flex;
         flex-direction: row;
@@ -1481,7 +1424,6 @@ font-size: 80px;
         width: 300px;
         gap: 0;
     }
-    
     
     .product-card img {
         width: 100%; /* A imagem ocupará toda a largura do contêiner pai */
@@ -1494,7 +1436,6 @@ font-size: 80px;
         text-align: left;
     }
     
-
     .product-info .title {
     font-size: 1.5em; /* Aumenta um pouco o tamanho da fonte para destacar mais */
     font-weight: bold;
@@ -1502,14 +1443,12 @@ font-size: 80px;
     margin: 15px 0; /* Ajusta o espaçamento superior e inferior */
     }
 
-
     .product-info .subtitle {
     font-size: 1em; /* Um pouco maior para melhorar a leitura */
     color: #666;
     margin-bottom: 10px; /* Ajuste para não deixar muito espaço */
     }
     
-
     .explore-link {
         font-size: 1em; /* Ajusta o tamanho da fonte */
     color: #000;
@@ -1517,13 +1456,10 @@ font-size: 80px;
     margin-top: 10px; /* Ajuste para não ter muito espaço */
     }
 
-
     .sidebar {
         height: 600px; /* Ajuste a altura conforme necessário */
         margin-right: 17px;
     }
-
-
 
     .product-list .product-categories-wrapper1 {
         flex-direction: column;
@@ -1561,7 +1497,6 @@ font-size: 80px;
         margin-right: 50px;
     }
     
-
     .most-popular .popular-left{
         background-color: #ffffff;
         margin-bottom: 60px;
@@ -1609,7 +1544,6 @@ font-size: 80px;
         margin-top: 56px;
     }
 
-
     .num-vendas s{
      display: flex;
      font-weight: bold;
@@ -1638,20 +1572,14 @@ font-size: 80px;
     .dot2-3 { background-color: #c74e1f; }
     .dot2-4 { background-color: #000000; }
 
-
      .features-list{
         margin-top: 130px;
         display: flex;
      }
 
-
-
      .product-sidebar2{
         display: block;
     }
-
-
-
 
      .product-listing .product-categories-wrapper2 {
         flex-direction: column;
@@ -1701,8 +1629,6 @@ font-size: 80px;
         display: none;
     }
 
-
-    
     .additional-product-grid {
         display: flex;
         padding: 20px;
@@ -1763,23 +1689,15 @@ font-size: 80px;
         font-size: 0.9em;
     }
     
-
-
-
-
-
     .new-most-popular .large-image img{
         width: 400px;
         border-radius: 0px;
         margin: auto;
     }
 
-
     .product-details {
         display: none;
     }
-
-
 
     .product-details2 {
         border-radius: 0px;      
@@ -1819,7 +1737,6 @@ font-size: 80px;
         margin-bottom: 50px;
     }
     
-    
     .product-details2 .product-description2 {
         font-size: 0.9em;
         font-weight: bold;
@@ -1834,12 +1751,9 @@ font-size: 80px;
         margin-top: 20px;
     }
     
-
     .bestseller-header h2{
     margin-left: 139px;
     }
-
-
 
     .product-items-grid{
         display: flex;
@@ -1880,22 +1794,15 @@ font-size: 80px;
 }
 
   
-
-
-
-
-
   @media (max-width: 480px) {
     /* Ajustes adicionais para celulares */
     .header-icons {
        display: none;
     }
   
-  
     .hero button {
         padding: 10px 20px;
     }
-  
   
     .features-list,
     .product-section {

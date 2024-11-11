@@ -3,8 +3,6 @@ const slides = document.querySelectorAll('.slider img');
 const progressBar = document.querySelector('.progress-bar .progress');
 const productDisplayCount = 6; // Exibe 6 produtos de uma vez (3 na parte superior, 3 na parte inferior)
 
-
-
 // Atualiza a barra de progresso do carrossel
 function updateProgressBar() {
     if (!progressBar || slides.length === 0) return;
@@ -28,7 +26,6 @@ function toggleMobileMenu() {
     }
 }
 
-  
 
 // Mostra a slide atual
 function showSlide(index) {
@@ -52,8 +49,6 @@ function prevSlide() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     showSlide(currentSlide);
 }
-
-
 
 // Exibe produtos em grupos de 6 (3 na parte superior, 3 na parte inferior) com animação
 function showProducts(products, startIndex, displayCount) {
@@ -144,8 +139,6 @@ window.addEventListener('resize', () => {
     }
 });
 
-
-
 // Seleciona todas as seções de "Bestseller Products"
 const bestsellerSections = document.querySelectorAll(".product-categories-wrapper1");
 
@@ -187,10 +180,6 @@ bestsellerSections.forEach(section => {
     // Inicializa a primeira categoria como ativa
     updateActiveCategory(currentCategoryIndex);
 });
-
-
-
-
 
 // Seleciona todas as seções de "Bestseller Products"
 const bestsellerSections2 = document.querySelectorAll(".product-categories-wrapper2");
